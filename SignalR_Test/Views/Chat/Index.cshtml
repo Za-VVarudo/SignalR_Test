@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Chatbox</h1>
+
+<div class="container">
+    <div class="row"> &nbsp; </div>
+    <div class="row">
+        <label for="username"  class="col-md-1">
+            Username:
+        </label>
+        <div class="col-md-5">
+            <input type="text" id="username" />
+        </div>
+    </div>
+    <div class="row"> &nbsp; </div>
+    <div class="row">
+        <label for="message" class="col-md-1">
+            Message:
+        </label>
+        <div class="col-md-5">
+            <textarea rows="4" cols="50" id="message"></textarea>
+        </div>
+    </div>
+    <div class="row"> &nbsp; </div>
+    <div class="row">
+        <div class="col-md-1">
+            <input type="button" class="btn btn-info" id="btnSend" value="Send"/>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <hr/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <ul id="messageList"></ul>
+    </div>
+</div>
+ <script src="~/microsoft/bf-generate/dist/browser/signalr.js"></script>
+ <script src="~/js/MessageReceiver.js"></script>
+
+
+
+
+
